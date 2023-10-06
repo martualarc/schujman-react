@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+"use client"
+import {useState} from 'react'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/Ayuda.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+export default function Boton (props) {
+    const [cont, setCont] = useState(0);
+
+    return (
+        <div className='flex flex-col items-center mx-20'>
+        <button 
+         className='text-white rounded-lg p-2 text-xl bg-orange-800 hover:bg-white hover:text-orange-800' 
+            onClick={() => (setCont(props.suma?cont + 1:cont-1))}>
+        {props.cartel}
+        </button>
+        <p className='text-white text-3xl'>{cont}</p>
+        </div>
+    )
 }
-
-export default App;
