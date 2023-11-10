@@ -20,15 +20,15 @@ export const contMenu = [
             url: 'sub-submenu',
           },
           {
-            title: 'Sub-submenu 2',
+            title: 'Sub-submenu 1',
             submenu: [
               {
                 title: 'Otro submenu',
                 url: 'otrosubmenu',
               },
               {
-                title: 'Otro submenu 2',
-                url: 'otrosubmenu',
+                title: 'Otro submenu 1',
+                url: 'otrosubmenu1',
               },
             ],
           },
@@ -41,7 +41,7 @@ export const contMenu = [
     ],
   },
   {
-    title: 'Link 2',
+    title: 'Link2',
     url: '/link2',
     submenu: [
       {
