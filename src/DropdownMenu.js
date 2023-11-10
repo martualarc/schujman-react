@@ -1,5 +1,5 @@
 import Menu from './Menu';
-const Dropdown = ({ submenus, dropdown, depthLevel }) => {
+const DropdownMenu = ({ submenus, dropdown, depthLevel }) => {
   depthLevel = depthLevel + 1;
   const dropdownClass = depthLevel > 1 ? 'dropdown-submenu' : '';
   return (
@@ -19,4 +19,4 @@ const Dropdown = ({ submenus, dropdown, depthLevel }) => {
   );
 };
 
-export default Dropdown;
+export default DropdownMenu;

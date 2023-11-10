@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import Dropdown from './Dropdown';
+import DropdownMenu from './DropdownMenu';
 
 import { Link } from 'react-router-dom';
 
@@ -69,7 +69,7 @@ const Menu = ({ items, depthLevel }) => {
               <span className="arrow" />
             )}
           </button>
-          <Dropdown
+          <DropdownMenu
             depthLevel={depthLevel}
             submenus={items.submenu}
             dropdown={dropdown}
@@ -90,7 +90,7 @@ const Menu = ({ items, depthLevel }) => {
               <span className="arrow" />
             )}
           </button>
-          <Dropdown
+          <DropdownMenu
             depthLevel={depthLevel}
             submenus={items.submenu}
             dropdown={dropdown}
