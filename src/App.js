@@ -11,12 +11,13 @@ import OtroMas from './routes/OtroMas';
 import SubSubMenu from './routes/SubSubmenu';
 import OtroSubmenu from './routes/OtroSubmenu';
 import OtroSubmenu1 from './routes/OtroSubmenu1';
+import Show from './Show';
 
 const App = () => {
     return (
       <>
         <Routes>
-          <Route path="/" element={<Layout />}>
+          <Route path="/" element={<Show />}>
             <Route index element={<Home />} />
             <Route path="link2" element={<Link1 />} />
             <Route path="link2" element={<Link2 />} />
