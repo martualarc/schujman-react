@@ -1,9 +1,9 @@
 import { useState, useEffect, useRef } from 'react';
-import Dropdown from './DropdownMenu';
+import Dropdown from './Dropdown';
 
 import { Link } from 'react-router-dom';
 
-const MenuItems = ({ items, depthLevel }) => {
+const Menu = ({ items, depthLevel }) => {
   const [dropdown, setDropdown] = useState(false);
 
   let ref = useRef();
@@ -51,6 +51,8 @@ const MenuItems = ({ items, depthLevel }) => {
         <>
           <button
             type="button"
+            aria-haspopup="menu"
+            aria-expanded={dropdown ? 'true' : 'false'}
             onClick={() => setDropdown((prev) => !prev)}
           >
             {window.innerWidth < 960 && depthLevel === 0 ? (
@@ -77,6 +79,8 @@ const MenuItems = ({ items, depthLevel }) => {
         <>
           <button
             type="button"
+            aria-haspopup="menu"
+            aria-expanded={dropdown ? 'true' : 'false'}
             onClick={() => setDropdown((prev) => !prev)}
           >
             {items.title}{' '}
@@ -99,4 +103,4 @@ const MenuItems = ({ items, depthLevel }) => {
   );
 };
 
-export default MenuItems;
+export default Menu;
