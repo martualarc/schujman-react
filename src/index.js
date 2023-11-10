@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './style/index.css';
+import './style/App.css';
 import Botones from './Botones';
 import reportWebVitals from './reportWebVitals';
 import App from './App';
