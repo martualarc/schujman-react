@@ -4,7 +4,7 @@ import Link1 from './routes/Link1';
 import Link2 from './routes/Link2';
 import Link3 from './routes/Link3';
 import Submenu from './routes/Submenu';
-import Submenu1 from './Submenu1';
+import Submenu1 from './routes/Submenu1';
 import Submenu2 from './routes/Submenu2';
 import MasSubmenus from './routes/MasSubmenus';
 import OtroMas from './routes/OtroMas';
